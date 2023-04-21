@@ -1,0 +1,50 @@
+body {
+    background-color: ivory;
+    color: black;
+}
+
+a{
+    text-decoration: none;
+}
+
+#title{
+    color: lightblue;
+    padding: 17px;
+
+}
+
+#initials{
+    color: lightblue;
+    display: flex;
+    font-size: 25px;
+    
+}
+
+#top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    padding: 1px 15px;
+
+}
+
+#dog{
+    width: 500px;
+    border-color: blueviolet;
+    border-width: 5px;
+    border-style: solid;
+}
+
+#side_proj{
+    background-color: lightgray;
+    display: flex;
+    padding: 100px 10px;
+}
+
+#about_me{
+    background-image: url("https://ggsc.s3.amazonaws.com/images/uploads/The_Science-Backed_Benefits_of_Being_a_Dog_Owner.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
