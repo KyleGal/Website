@@ -1,64 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kyle Gabriel Galvez Website</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&amp;resize=1200:*" <="" head="">
-</head>
-<body>
-    <!-- Top of Website-->
-    <header id="top">
-        <h1 id="initials">KG</h1>
-        <div>
-            <span>
-                <a href="#about_me" id="title">About Me</a>
-            </span>
-            <span>
-                <a href="#side_proj" id="title">Side Projects</a>
-            </span>
-            <span>
-                <a href="#contact" id="title">Contact Me</a>
-            </span>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kyle Gabriel Galvez Website</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- Web Page Icon -->
+        <link rel="icon" href="https://media.istockphoto.com/id/1266601161/vector/kilogram-icon-weight-unit-icon-kg-icon.jpg?s=170667a&w=0&k=20&c=W9g9TA8Plttvg1NVhjKfU9iXbuA2HezyAf1PMDG6tG4=" head="">
+    </head>
+
+
+    <!-- Header -->
+    <header class="header">
+        <!-- Navigation Bar -->
+        <div class="navbar">
+            <img src="https://media.istockphoto.com/id/1266601161/vector/kilogram-icon-weight-unit-icon-kg-icon.jpg?s=170667a&w=0&k=20&c=W9g9TA8Plttvg1NVhjKfU9iXbuA2HezyAf1PMDG6tG4=" alt="Logo" class="logo" />
+
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#side_proj">Side Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+                <li><a href="file:///Users/kylegabrielgalvez/Desktop/SP/website/Kyle%20Galvez%20Resume.pdf" target="_blank" title="open_resume">Resume</a></li>
+            </ul>
         </div>
     </header>
 
+    <!-- Website Body -->
+    <body class="body">
+        <!-- Picture of me that goes before the about area -->
+        <div class="image_me"><img id="me" src="/Users/kylegabrielgalvez/Desktop/SP/website/IMG_0062.JPG" alt="Picture of Kyle" /></div>
 
-    <!-- Middle Information-->
-    <div id="middle">
-        <!--<img src = "https://ggsc.s3.amazonaws.com/images/uploads/The_Science-Backed_Benefits_of_Being_a_Dog_Owner.jpg" id="dog">-->
-        
-        <div id="about_me">
+        <!-- About -->
+        <div class="about" id="about">
             <h2>About Me</h2>
-            <pre id="about_me_text">
+            <p id="about_me_text">
                 My name is Kyle Gabriel Galvez. I am currently a 3rd year at the University of 
                 California - Davis, pursuing a bachelors in Computer Science. I am excited to 
                 learn anything and everything there is to know about programming. This is my run 
                 at web development, but I want to learn about software development, cryptography, 
                 databases, machine learning, and AI to see what is the best path for me.
-            </pre>
-        </div>
-
-        <div id="side_proj">
-            <h2>Side Projects</h2>
-            <p>
-                This website!
             </p>
         </div>
-    </div>
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <div id="bottom">
-        <img src="https://i.natgeofe.com/n/9135ca87-0115-4a22-8caf-d1bdef97a814/75552_square.jpg" id="dog">
-        <!-- Bottom of Page -->
-        <h2 id="contact">Contact Me</h2>
-    </div>
+        <!-- Side Projects -->
+        <div class="side_proj" id="side_proj">
+            <!-- GitHub -->
+            <a href="https://github.com/KyleGal" target="_blank">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAMAAACfWMssAAAAZlBMVEX///8XFRUAAAATEREKBgYRDg7t7e2BgIA3NjbZ2dlTUlLq6urCwsKJiIjGxsb39/ebm5uPj492dXVwcHC5ubnMzMyqqqo+PT1OTU0lJCRYWFiysrIwLy/j4+NIR0d7e3tkY2MdGxs/J1iEAAAB9klEQVRIie2W23aDIBBFdUCNmqjUaDRGY/7/JztcvOFg0qeurtXzZIFNYWY4E8/71x9QXtWFEEVd5T+hevGAWQ/Rf4hVDUDgzwoAhuoDLEyA+5Y4NOE7rttjGu2OuSdQmBR8HXGjk0NydHPlAYdk6eIK0EEEtiUY6DBDQXO94k5eLAC/GJdJ5LgHgIi9QZExCbbLrgUySfmMygQ/xHKaF8XV6oJwVX+k6TQc6q+znq0JUN8MzvQ9KtC33c9cdURdiXZPD/ww5qYy+GBP5CaF4HgK6TRvP7PpKILmTFjn4C26AL3hIrPgYg3f1RWDm5PzErWC363hF3v3BCKdELsGHAdZSZglNPh0g5cjkI9usKRBn5E3WOmkDIz51nDC36TDVAhPrPHIHIQqf6XOLIjoccZdoL7LvsrDqRYdmZzsD3YGq+4eEGdRMrmQzmJLGkCA5u/Dbecs8W2yPyoG4PNSbR1gn8nm19Vnol1aCeEA8t3AoA+FFjnX8rjuQLRBoulIsoVNDKYX7rIcT/sRvtN8QEtsl+HH6h862h0WgYpaWqWr0fvcvuiASzVAeMcMQuPiPA/DDols+/0ehAN3wFrHpMiesdrcgGBXtyWhgr92FgUGbvubFLeYFgtk0NJ9aquObY6KZcje/ACYlZWr1nMusw+xf/2evgEGFBJqrqKT4AAAAABJRU5ErkJggg==" alt="GitHub" />
+            </a>
 
+            <!-- Complete Side Projects -->
+            <div id="complete_proj">
+                <h2>Complete Side Projects</h2>
+                <ul>
+                    <li>This Website!</li>
+                </ul>
+            </div id="work_proj">
+            <!-- In Progress Side Projects -->
+            <div>
+                <h2>Work In Progress</h2>
+                <ul>
+                    <li>Today</li>
+                </ul>
+            </div>
+        </div>
 
-</body>
+        <!-- Find Me -->
+        <div class="contact" id="contact">
+            <ul class="contactbar">
+                <!-- Instagram -->
+                <li>
+                    <a href="https://www.instagram.com/kyle.gaalvez/" target="_blank">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXR1HB0aKPm7DN0fvOfVDT-wgLJyjFqIyfGghdE7RM9w&usqp=CAU&ec=48600112" alt="Instagram" />
+                    </a>
+                </li>
+                <!-- Linked In -->
+                <li>
+                    <a href="https://www.linkedin.com/in/kyle-gabriel-galvez-576674262/" target="_blank">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAMAAACfWMssAAAAYFBMVEUAd7X///8Ac7NGlMRGk8QAdrUAbLAAbrDZ7PXV6fPy+fw9ir/p9Pkugbo0hr3D2umz0ORUnMh3q9C72eplocoIe7dsps6dxN6lyeCDs9TL4u+WwNzg7vVTmMYhg7uy1OcLxWtDAAABaklEQVRIie3W7Y6CMBAFUBxohwIK8qEIgu//lltou7TortNu9p83MRGSIzgzlEaHwETyU51jr5wrBWsODDzCgNcLrHjkHV5JOIE/hEnCOATGEiYhMHGgLBELgdi1lxlJ1IH8uvS17CjShtiriRCekM1mlm7oBaE2sCEMhA1vBg5+kCUG9n63GmGqXJYTqmNDlhcrrAkXdPsIx3FI+4TidpPDkHNOm7ndrP6U9TH/5VZxDewPsEvaS5t0CK8h9qXKSd4tq9T3EaC73rOl2EVp/X0bcqcddzMMU7YtbFuHHShsqH+lnJwlsUIqFIW7mLZAhPuYOfaGh5nR4fBotgLVQIWik+PE+11h38NCLUGmV+Ypfw9HdQU0j/lAhfr9AKafggizXHc81/VJibA4qvKzk4HE4nzgB/4jfLU8UiA26RqxQn0wfEOhTjTPMEIdZh9EOsw9QXzpPOdvMHgTGLztDN7oBm+twzfzYfkCChobmnKthiYAAAAASUVORK5CYII=" alt="Linked In" />
+                    </a>
+                </li>
+                <!-- Email -->
+                <li>
+                    <a href="mailto:kylegmg@gmail.com">
+                        <img src="data:image/png;base64,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" alt="My Email" />
+                    </a>
+                </li>
+            </ul>
+            
+        </div>
+
+    </body>
+
 </html>

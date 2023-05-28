@@ -1,50 +1,72 @@
+/* Header styling */
+header{
+    width: 100%;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 10%;
+    line-height: 500%;
+
+    background-color: #F2F3F4;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0px 50px;     /* adjust spacing between the text */
+    position: relative;
+}   
+
+/* Edits nav bar text */
+.navbar ul li a {
+    text-decoration: none;
+
+    color: lightblue;
+    font-size: 150%;
+    text-transform: uppercase;
+}
+
+.logo{
+    width: 60px;
+    height: auto;
+    padding: 14px;
+    cursor: pointer;
+}
+
+#me {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* Body Styling */
 body {
     background-color: ivory;
     color: black;
-}
-
-a{
-    text-decoration: none;
-}
-
-#title{
-    color: lightblue;
-    padding: 17px;
+    margin: 0 0 0 0;
 
 }
 
-#initials{
-    color: lightblue;
-    display: flex;
-    font-size: 25px;
-    
+.about {
+    margin-left: 5px;
 }
 
-#top{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid black;
-    padding: 1px 15px;
-
+#about_me_text {
 }
 
-#dog{
-    width: 500px;
-    border-color: blueviolet;
-    border-width: 5px;
-    border-style: solid;
-}
 
-#side_proj{
-    background-color: lightgray;
-    display: flex;
-    padding: 100px 10px;
-}
-
-#about_me{
-    background-image: url("https://ggsc.s3.amazonaws.com/images/uploads/The_Science-Backed_Benefits_of_Being_a_Dog_Owner.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-}
 
