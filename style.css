@@ -1,48 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 /* Header styling */
 header{
     width: 100%;
-    object-fit: cover;
-    background-size: cover;
-    background-position: center;
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
 }
 
 .navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 10%;
-    line-height: 500%;
+    background-color: whitesmoke;
 
-    background-color: #F2F3F4;
+    display: flex;
+    justify-content: space-between;
 }
 
-.navbar ul li {
-    list-style: none;
-    display: inline-block;
-    margin: 0px 50px;     /* adjust spacing between the text */
-    position: relative;
-}   
-
-/* Edits nav bar text */
-.navbar ul li a {
+.left-side li a {
     text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
 
-    color: lightblue;
-    font-size: 150%;
-    text-transform: uppercase;
+    padding: 20px 22px;
+    cursor: auto;
 }
 
 .logo{
-    width: 60px;
-    height: auto;
-    padding: 14px;
+    width: 50px;
+    /* padding: 14px; */
     cursor: pointer;
+}
+
+.right-side, .left-side {
+    list-style-type: none;
+}
+
+.right-side li, .left-side li {
+    display: inline-block;
+}
+
+.right-side li a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    color: lightblue;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    padding: 30px 35px;
 }
 
 #me {
