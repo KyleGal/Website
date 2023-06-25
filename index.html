@@ -10,9 +10,16 @@
         <link rel="icon" href="https://media.istockphoto.com/id/1266601161/vector/kilogram-icon-weight-unit-icon-kg-icon.jpg?s=170667a&w=0&k=20&c=W9g9TA8Plttvg1NVhjKfU9iXbuA2HezyAf1PMDG6tG4=" head="">
     </head>
 
+    <!-- TODO: style for...
+        - About Me
+        - Side Projects 
+        - Work in Progress
+        - Contact Me
+    -->
+
 
     <!-- Header -->
-    <header class="header">
+    <header class="header" id="header">
         <!-- Navigation Bar -->
         <nav class="navbar">
             <!-- TODO: Make left side image stack on top when web browser is minimized -->
@@ -24,7 +31,8 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#side_proj">Side Projects</a></li>
                 <li><a href="#contact">Contact Me</a></li>
-                <li><a href="https://github.com/KyleGal/Website/blob/main/Kyle%20Galvez%20Resume.pdf" target="_blank" title="open_resume">Resume</a></li>
+                <!-- TODO: Make resume pdf work on github pages -->
+                <li><a class="resume" href="https://github.com/KyleGal/Website/blob/main/Kyle%20Galvez%20Resume.pdf" target="_blank" title="open_resume">Resume</a></li>
             </ul>
         </nav>
     </header>
@@ -32,36 +40,33 @@
     <!-- Website Body -->
     <body class="body">
         <!-- Picture of me that goes before the about area -->
+        
         <div class="image_me"><img id="me" src="file:///C:/Users/kyleg/Desktop/Website/Website/IMG_0062.JPG" alt="Picture of Kyle" /></div>
 
         <!-- About -->
         <div class="about" id="about">
             <h2>About Me</h2>
             <p id="about_me_text">
-                My name is Kyle Gabriel Galvez. I am currently a 3rd year at the University of 
-                California - Davis, pursuing a bachelors in Computer Science. I am excited to 
-                learn anything and everything there is to know about programming. This is my run 
-                at web development, but I want to learn about software development, cryptography, 
-                databases, machine learning, and AI to see what is the best path for me.
+                Hey there! I'm Kyle Gabriel Galvez, a third-year student at the University of California - Davis, majoring in Computer Science. I've got this insatiable 
+                curiosity for programming and I'm super stoked to soak up knowledge about everything related to it. Right now, I'm diving into the world of web development, 
+                but I'm also eager to explore software development, cryptography, databases, machine learning, and AI. I want to figure out which path in this vast field 
+                suits me best. Let's see where this adventure takes me!
             </p>
         </div>
 
         <!-- Side Projects -->
         <div class="side_proj" id="side_proj">
-            <!-- GitHub -->
-            <a href="https://github.com/KyleGal" target="_blank">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAMAAACfWMssAAAAZlBMVEX///8XFRUAAAATEREKBgYRDg7t7e2BgIA3NjbZ2dlTUlLq6urCwsKJiIjGxsb39/ebm5uPj492dXVwcHC5ubnMzMyqqqo+PT1OTU0lJCRYWFiysrIwLy/j4+NIR0d7e3tkY2MdGxs/J1iEAAAB9klEQVRIie2W23aDIBBFdUCNmqjUaDRGY/7/JztcvOFg0qeurtXzZIFNYWY4E8/71x9QXtWFEEVd5T+hevGAWQ/Rf4hVDUDgzwoAhuoDLEyA+5Y4NOE7rttjGu2OuSdQmBR8HXGjk0NydHPlAYdk6eIK0EEEtiUY6DBDQXO94k5eLAC/GJdJ5LgHgIi9QZExCbbLrgUySfmMygQ/xHKaF8XV6oJwVX+k6TQc6q+znq0JUN8MzvQ9KtC33c9cdURdiXZPD/ww5qYy+GBP5CaF4HgK6TRvP7PpKILmTFjn4C26AL3hIrPgYg3f1RWDm5PzErWC363hF3v3BCKdELsGHAdZSZglNPh0g5cjkI9usKRBn5E3WOmkDIz51nDC36TDVAhPrPHIHIQqf6XOLIjoccZdoL7LvsrDqRYdmZzsD3YGq+4eEGdRMrmQzmJLGkCA5u/Dbecs8W2yPyoG4PNSbR1gn8nm19Vnol1aCeEA8t3AoA+FFjnX8rjuQLRBoulIsoVNDKYX7rIcT/sRvtN8QEtsl+HH6h862h0WgYpaWqWr0fvcvuiASzVAeMcMQuPiPA/DDols+/0ehAN3wFrHpMiesdrcgGBXtyWhgr92FgUGbvubFLeYFgtk0NJ9aquObY6KZcje/ACYlZWr1nMusw+xf/2evgEGFBJqrqKT4AAAAABJRU5ErkJggg==" alt="GitHub" />
-            </a>
-
             <!-- Complete Side Projects -->
-            <div id="complete_proj">
+            <div class="complete">
                 <h2>Complete Side Projects</h2>
                 <ul>
                     <li>This Website!</li>
+                    <li></li>
                 </ul>
-            </div id="work_proj">
+            </div>
+
             <!-- In Progress Side Projects -->
-            <div>
+            <div class="inWorks">
                 <h2>Work In Progress</h2>
                 <ul>
                     <li>Today</li>
@@ -72,6 +77,12 @@
         <!-- Find Me -->
         <div class="contact" id="contact">
             <ul class="contactbar">
+                <!-- GitHub -->
+                <li>
+                    <a href="https://github.com/KyleGal" target="_blank">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAMAAACfWMssAAAAZlBMVEX///8XFRUAAAATEREKBgYRDg7t7e2BgIA3NjbZ2dlTUlLq6urCwsKJiIjGxsb39/ebm5uPj492dXVwcHC5ubnMzMyqqqo+PT1OTU0lJCRYWFiysrIwLy/j4+NIR0d7e3tkY2MdGxs/J1iEAAAB9klEQVRIie2W23aDIBBFdUCNmqjUaDRGY/7/JztcvOFg0qeurtXzZIFNYWY4E8/71x9QXtWFEEVd5T+hevGAWQ/Rf4hVDUDgzwoAhuoDLEyA+5Y4NOE7rttjGu2OuSdQmBR8HXGjk0NydHPlAYdk6eIK0EEEtiUY6DBDQXO94k5eLAC/GJdJ5LgHgIi9QZExCbbLrgUySfmMygQ/xHKaF8XV6oJwVX+k6TQc6q+znq0JUN8MzvQ9KtC33c9cdURdiXZPD/ww5qYy+GBP5CaF4HgK6TRvP7PpKILmTFjn4C26AL3hIrPgYg3f1RWDm5PzErWC363hF3v3BCKdELsGHAdZSZglNPh0g5cjkI9usKRBn5E3WOmkDIz51nDC36TDVAhPrPHIHIQqf6XOLIjoccZdoL7LvsrDqRYdmZzsD3YGq+4eEGdRMrmQzmJLGkCA5u/Dbecs8W2yPyoG4PNSbR1gn8nm19Vnol1aCeEA8t3AoA+FFjnX8rjuQLRBoulIsoVNDKYX7rIcT/sRvtN8QEtsl+HH6h862h0WgYpaWqWr0fvcvuiASzVAeMcMQuPiPA/DDols+/0ehAN3wFrHpMiesdrcgGBXtyWhgr92FgUGbvubFLeYFgtk0NJ9aquObY6KZcje/ACYlZWr1nMusw+xf/2evgEGFBJqrqKT4AAAAABJRU5ErkJggg==" alt="GitHub" />
+                    </a>
+                </li>
                 <!-- Instagram -->
                 <li>
                     <a href="https://www.instagram.com/kyle.gaalvez/" target="_blank">

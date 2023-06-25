@@ -11,7 +11,7 @@ header{
 }
 
 .navbar {
-    background-color: whitesmoke;
+    background-color: #B8E2F2;
 
     display: flex;
     justify-content: space-between;
@@ -47,7 +47,7 @@ header{
     width: 100%;
     height: 100%;
 
-    color: lightblue;
+    color: white;
     font-size: 30px;
     text-transform: uppercase;
     font-weight: bold;
@@ -63,20 +63,113 @@ header{
     margin-right: 0;
 }
 
+/* resume button */
+.resume {
+    background-color: lightgray;
+    /* margin: 20px; */
+}
+
 /* Body Styling */
 body {
-    background-color: ivory;
+    background-color: #B8E2F2;
     color: black;
     margin: 0 0 0 0;
 
 }
 
+/* ABOUT ME */
 .about {
-    margin-left: 5px;
+    background-color: white;
+
+    border-radius: 25px;
+    margin: 3em;
+}
+
+.about h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+    padding-top: 10px;
+    padding-left: 25px;
 }
 
 #about_me_text {
+    font-size: 25px;
+    padding-top: 0px;
+    padding: 1em;
 }
 
+/* Side Projects */
+.side_proj {
+    display: flex;
+    justify-content: space-evenly;
+    /* margin: 1em; */
+}
 
+.complete, .inWorks {
+    background-color: whitesmoke;
 
+    list-style-type: none;
+    padding: 2em;
+    height: 100%;
+    width: 500px;
+
+    border-radius: 25px;
+}
+
+.complete ul li{
+    background-color: lightgray;
+    border-color: black;
+    border-style: solid;
+    border-radius: 25px;
+
+    height: 100px;
+    width: 100px;
+
+    text-decoration: none;
+    display: block;    
+}
+
+.inWorks ul li {
+    background-color: lightgray;
+    border-style: solid;
+    border-color: black;
+    border-radius: 25px;
+
+    width: 100px;
+    height: 100px;
+
+    text-decoration: none;
+    display: block;
+}
+
+/* Contact Me */
+.contact {
+    background-color: lightsteelblue;
+    display: flex;
+    justify-content: space-evenly;
+
+    margin-top: 50px;
+    width: 100%;
+    height: 150px;
+}
+
+.contactbar {
+    list-style-type: none;
+    margin: auto;
+}
+
+.contactbar li {
+    display: inline-block;
+    
+}
+
+.contactbar li a {
+    padding: 5px;
+}
+
+.contactbar li a img{
+    height: 50px;
+    width: 50px;
+}
