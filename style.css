@@ -55,18 +55,19 @@ header{
     padding: 30px 35px;
 }
 
-#me {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    margin-left: 0;
-    margin-right: 0;
-}
-
 /* resume button */
 .resume {
     background-color: lightgray;
     /* margin: 20px; */
+}
+
+/* Main image */
+#me {
+    width: 100%;
+    height: 615px;
+    object-fit: cover;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 /* Body Styling */
@@ -85,64 +86,52 @@ body {
     margin: 3em;
 }
 
-.about h2 {
-    font-size: 40px;
-    text-transform: uppercase;
-    font-weight: bold;
-    
-    padding-top: 10px;
-    padding-left: 25px;
-}
-
 #about_me_text {
     font-size: 25px;
     padding-top: 0px;
     padding: 1em;
 }
 
+
 /* Side Projects */
 .side_proj {
-    display: flex;
-    justify-content: space-evenly;
-    /* margin: 1em; */
+    background-color: whitesmoke;
+    margin: 3em;
+    height: 283px;
+    padding: 1.25em;
+    border-radius: 25px;
 }
 
-.complete, .inWorks {
-    background-color: whitesmoke;
+.side_proj h2 {
+    text-align: center;
+}
+
+.complete {
+    padding-top: 20px;
+    padding-left: 50px;
+    border-radius: 25px;
+
+    display: flex;
+    justify-content: start;
+}
+
+.complete ul li {
+    background-color: lightgray;
+    border-color: black;
+    border-style: solid;
+    border-radius: 25px;
+
+    display: inline-block;
+
+    height: 150px;
+    width: 150px;
 
     list-style-type: none;
-    padding: 2em;
-    height: 100%;
-    width: 500px;
-
-    border-radius: 25px;
+    padding: 1em;
+    margin-right: 20px;
+    text-align: center;
 }
 
-.complete ul li{
-    background-color: lightgray;
-    border-color: black;
-    border-style: solid;
-    border-radius: 25px;
-
-    height: 100px;
-    width: 100px;
-
-    text-decoration: none;
-    display: block;    
-}
-
-.inWorks ul li {
-    background-color: lightgray;
-    border-style: solid;
-    border-color: black;
-    border-radius: 25px;
-
-    width: 100px;
-    height: 100px;
-
-    text-decoration: none;
-    display: block;
-}
 
 /* Contact Me */
 .contact {
