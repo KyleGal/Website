@@ -115,7 +115,7 @@ body {
     justify-content: start;
 }
 
-.sp_img li {
+.complete ul li {
     background-color: lightgray;
     border-color: black;
     border-style: solid;
@@ -127,29 +127,6 @@ body {
     width: 150px;
 
     list-style-type: none;
-    padding: 1em;
-    margin-right: 20px;
-    text-align: center;
-}
-
-/* SP Images */
-.website_logo {
-    max-height: 100%;
-    max-width: 100%;
-    object-fit: contain;
-}
-
-.KK_logo {
-    width: 100%;
-    object-fit: fill;
-    margin-bottom: 45px;
-    /* padding-top: 10px; */
-}
-
-/* SP Text */
-.sp_text li {
-    list-style-type: none;
-    display: inline-block;
     padding: 1em;
     margin-right: 20px;
     text-align: center;
