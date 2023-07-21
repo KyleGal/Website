@@ -1,0 +1,24 @@
+/* CSS styling for personal projects section */
+
+#personalProj {
+    margin-top: 100px;
+}
+
+#personalProjTitle {
+    text-align: left;
+    color: white !important;
+    bottom: 200px !important;
+} 
+
+.card {
+    max-width: 100%;
+    width: 20rem;
+    height: 12rem;
+    margin-bottom: 20px;
+}
+
+.card-img-top {
+    max-width: 20rem;
+    height: 12rem;
+    object-fit: contain;
+}

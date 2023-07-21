@@ -1,0 +1,14 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "This is my website I will be building for the next 4-6 weeks. Hopefully it turns out well because I am also taking a data structures class, calc 3, and computer architecture. GOOD LUCK TO ME!! # Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.0"
+  }
+}

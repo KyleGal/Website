@@ -1,0 +1,45 @@
+/* CSS styling for footer */
+
+#footerBackground {
+    background-color: #74B2D0 !important;
+    color: white;
+}
+
+#emailText {
+    text-align: center !important;
+}
+
+#emailBox {
+    border: 3px solid white;
+    box-shadow: 5px 4px 4px gray;
+
+    padding: 1em;
+    max-width: 100px;
+}
+
+#emailBox:hover {
+    box-shadow: none;
+    transition-duration: 1s;
+    color: white !important;
+}
+
+/* Social Media Icons */
+#mailIMG {
+    max-width: 60px;
+    max-height: 60px;
+}
+
+#linkInIMG {
+    max-width: 45px;
+    max-height: 45px;
+}
+
+#githubIMG {
+    max-width: 60px;
+    max-height: 60px;
+}
+
+#instaIMG {
+    max-width: 60px;
+    max-height: 60px;
+}

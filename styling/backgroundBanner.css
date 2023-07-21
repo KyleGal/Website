@@ -1,0 +1,215 @@
+/* CSS styling for the filipino flag background banner */
+
+.verticalBanner {
+    position: absolute;
+    top: 20px;
+    width: 75px;
+    height: 1625px;
+    z-index: -3;
+}
+
+#blueBanner {
+    left: 125px;
+    background-color: #74B2D0;
+}
+
+#redBanner {
+    left: 200px;
+    background-color:#F36870;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+
+    border-top: 75px solid white;
+    margin-left: 125px;
+    z-index: -2;
+
+    position: absolute;
+}
+
+#filoCenterStar {
+    position: absolute;
+    object-fit: cover;
+
+    top: 65px;
+    width: 40px;
+    height: 40px;
+
+    margin-left: 180px;
+    z-index: -1;
+}
+
+.horizontalFinish {
+    background-color: #74B2D0;
+    border-radius: 25px;
+
+    position: absolute;
+    top: 1625px;
+    left: 125px;
+    width: 150px;
+    height: 75px;
+
+    z-index: -3;
+}
+
+@media (max-width: 1399px) {
+    .verticalBanner {
+        height: 1730px;
+    }
+
+    .horizontalFinish {
+        top: 1730px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .verticalBanner {
+        height: 2090px;
+    }
+
+    #blueBanner{
+        left: 115px;
+    }
+
+    #redBanner {
+        left: 190px;
+    }
+
+    .triangle {
+        margin-left: 115px;
+    }
+
+    #filoCenterStar {
+        margin-left: 170px;
+    }
+
+    .horizontalFinish {
+        top: 2090px;
+        left: 115px;
+    }
+}
+
+@media (max-width: 991px) {
+    .verticalBanner {
+        height: 1330px;
+    }
+
+    #blueBanner{
+        left: 100px;
+    }
+
+    #redBanner {
+        left: 175px;
+    }
+
+    .triangle {
+        margin-left: 100px;
+    }
+
+    #filoCenterStar {
+        margin-left: 155px;
+    }
+
+    .horizontalFinish {
+        height: 50px;
+        top: 1325px;
+        left: 100px;
+    }
+}
+
+@media (max-width: 767px) {
+    .verticalBanner {
+        height: 1505px;
+    }
+
+    #blueBanner{
+        left: 75px;
+    }
+
+    #redBanner {
+        left: 150px;
+    }
+
+    .triangle {
+        margin-left: 75px;
+    }
+
+    #filoCenterStar {
+        margin-left: 130px;
+    }
+
+    .horizontalFinish {
+        height: 50px;
+        top: 1500px;
+        left: 75px;
+    }
+}
+
+@media (max-width: 575px) {
+    .verticalBanner {
+        height: 1500px;
+    }
+
+    #blueBanner{
+        left: 50px;
+    }
+
+    #redBanner {
+        left: 125px;
+    }
+
+    .triangle {
+        margin-left: 50px;
+    }
+
+    #filoCenterStar {
+        margin-left: 105px;
+    }
+
+    .horizontalFinish {
+        height: 50px;
+        top: 1500px;
+        left: 75px;
+    }
+}
+
+@media (max-width: 529px) {
+    .verticalBanner {
+        height: 1635px;
+        width: 50px;
+    }
+
+    #blueBanner{
+        left: 50px;
+    }
+
+    #redBanner {
+        left: 100px;
+    }
+
+    .triangle {
+        margin-left: 50px;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+
+        border-top: 50px solid white;
+    }
+
+    #filoCenterStar {
+        top: 63px;
+        margin-left: 87.5px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .horizontalFinish {
+        height: 0px;
+        top: 1500px;
+        left: 75px;
+    }
+}

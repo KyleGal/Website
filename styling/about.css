@@ -1,0 +1,68 @@
+/* CSS styling for the about section */
+
+#about {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#aboutText{
+    color: white;
+    text-align: left !important;
+    font-size: 21px;
+    font-weight: 400 !important;
+}
+
+#imageGridContainer {
+    width: 100%;
+    max-width: 800px;
+
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.imageGrid {
+    display: grid;
+    grid-template-rows: 1fr;
+}
+
+.imageGridItem:first-of-type {
+    grid-column: 3 / span 3;
+    grid-row: 3 / span 3;
+}
+
+.imageGridItem:last-of-type {
+    grid-column: 1 /span 3;
+    grid-row: 2 / span 3;
+}
+
+#snow {
+    width: 266px;
+    height: 341px;
+    object-fit: contain;
+}
+
+#rockClimbing {
+    width: 260px;
+    height: 341px;
+    object-fit: contain;
+}
+
+@media (max-width: 991.98px) {
+    #aboutTextContainer {
+        padding: 1rem !important;
+    }
+
+    #aboutText {
+        font-size: small;
+    }
+
+    #snow {
+        width: 121px;
+        height: 155px;
+    }
+
+    #rockClimbing {
+        width: 118px;
+        height: 155px;
+    }
+}
