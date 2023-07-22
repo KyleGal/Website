@@ -235,7 +235,7 @@ a:hover {
 
 /* NAVBAR */
 .nav-link {
-    color: white;
+    color: white !important;
 }
 
 #resume {
@@ -247,6 +247,10 @@ a:hover {
 #resume:hover {
     box-shadow: none;
     transition-duration: 1s;
+}
+
+#resume a:hover {
+    color: white !important;
 }
 
 
