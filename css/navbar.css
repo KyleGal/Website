@@ -1,0 +1,20 @@
+/* CSS styling for navigation bar */
+
+.nav-link {
+    color: white !important;
+}
+
+#resume {
+    background-color: #F36870;
+    box-shadow: 4px 2px 2px gray;
+    max-width: 85px
+}
+
+#resume:hover {
+    box-shadow: none;
+    transition-duration: 1s;
+}
+
+#resume a:hover {
+    color: white !important;
+}

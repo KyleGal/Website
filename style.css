@@ -1,3 +1,5 @@
+/* CSS file for styling of overall webpage and landing section */
+
 body {
     --bs-body-font-family: 'Comfortaa', cursive;
     --bs-body-bg: ivory;
@@ -16,8 +18,136 @@ a:hover {
     z-index: 1;
 }
 
+/* Landing Section */
+#homeImage {
+    padding-top: 35px;
+    height: 555px;;
+    width: 410px;
+    object-fit: contain;
+}
 
-/* Filipino Banner */
+.frontPageText {
+    text-align: left;
+}
+
+@media (max-width: 991.98px) {
+    #landingPage {
+        margin-top: 6rem !important;
+    }
+
+    #homeImage {
+        padding-top: 0px;
+        height: 416px;
+        width: 308px;
+    }
+
+    #frontPageTextContainer {
+        padding-top: 1rem !important;
+        padding-bottom: 3rem !important;
+    }
+
+    .frontPageText {
+        margin-right: 0rem !important;
+        margin-left: 0rem !important;
+
+        padding-left: 1rem;
+    }
+}
+
+@media (max-width: 767px) {
+
+    #homeImage {
+        height: 395px;
+        width: 293px;
+    }
+
+    #frontPageTextContainer {
+        padding: 0rem !important;
+        margin-right: 0rem !important;
+    }
+
+    .frontPageText {
+        margin-right: 0rem !important;
+        margin-left: 0rem !important;
+
+        padding-left: 0rem;
+    }
+}
+
+@media (max-width: 575px) {
+    #homeImage {
+        height: 317px;
+        width: 234px;
+    }
+
+    #frontPageTextContainer {
+        padding: 0rem !important;
+        margin-right: 0rem !important;
+    }
+
+    .frontPageText {
+        margin-right: 1rem !important;
+        margin-left: 0rem !important;
+
+        padding-left: 0rem;
+    }
+    
+    #h1TextFP {
+        font-size: 1.5em; /* h2 size */
+    }
+
+    #h5TextFP {
+        font-size: 0.67em; /* h6 size */
+    }
+}
+
+@media (max-width: 529px) {
+    #homeImage {
+        padding-left: 1rem;
+        height: 277.5px;
+        width: 205px;
+    }
+}
+
+@media (max-width: 401px) {
+    #homeImage {
+        padding-left: 1rem;
+        height: 222px;
+        width: 164px;
+    }
+
+    #h1TextFP {
+        font-size: 1.17em; /* h3 size */
+    }
+
+    #h5TextFP {
+        font-size: 0.60em; /* h6.5 size kinda (theoretically) */
+    }
+}
+
+/* CSS styling for navigation bar */
+
+.nav-link {
+    color: white !important;
+}
+
+#resume {
+    background-color: #F36870;
+    box-shadow: 4px 2px 2px gray;
+    max-width: 85px
+}
+
+#resume:hover {
+    box-shadow: none;
+    transition-duration: 1s;
+}
+
+#resume a:hover {
+    color: white !important;
+}
+
+/* CSS styling for the filipino flag background banner */
+
 .verticalBanner {
     position: absolute;
     top: 20px;
@@ -232,137 +362,8 @@ a:hover {
     }
 }
 
+/* CSS styling for the about section */
 
-/* NAVBAR */
-.nav-link {
-    color: white !important;
-}
-
-#resume {
-    background-color: #F36870;
-    box-shadow: 4px 2px 2px gray;
-    max-width: 85px
-}
-
-#resume:hover {
-    box-shadow: none;
-    transition-duration: 1s;
-}
-
-#resume a:hover {
-    color: white !important;
-}
-
-
-/* LANDING IMAGE AND TEXT */
-#homeImage {
-    padding-top: 35px;
-    height: 555px;;
-    width: 410px;
-    object-fit: contain;
-}
-
-.frontPageText {
-    text-align: left;
-}
-
-@media (max-width: 991.98px) {
-    #landingPage {
-        margin-top: 6rem !important;
-    }
-
-    #homeImage {
-        padding-top: 0px;
-        height: 416px;
-        width: 308px;
-    }
-
-    #frontPageTextContainer {
-        padding-top: 1rem !important;
-        padding-bottom: 3rem !important;
-    }
-
-    .frontPageText {
-        margin-right: 0rem !important;
-        margin-left: 0rem !important;
-
-        padding-left: 1rem;
-    }
-}
-
-@media (max-width: 767px) {
-
-    #homeImage {
-        height: 395px;
-        width: 293px;
-    }
-
-    #frontPageTextContainer {
-        padding: 0rem !important;
-        margin-right: 0rem !important;
-    }
-
-    .frontPageText {
-        margin-right: 0rem !important;
-        margin-left: 0rem !important;
-
-        padding-left: 0rem;
-    }
-}
-
-@media (max-width: 575px) {
-    #homeImage {
-        height: 317px;
-        width: 234px;
-    }
-
-    #frontPageTextContainer {
-        padding: 0rem !important;
-        margin-right: 0rem !important;
-    }
-
-    .frontPageText {
-        margin-right: 1rem !important;
-        margin-left: 0rem !important;
-
-        padding-left: 0rem;
-    }
-    
-    #h1TextFP {
-        font-size: 1.5em; /* h2 size */
-    }
-
-    #h5TextFP {
-        font-size: 0.67em; /* h6 size */
-    }
-}
-
-@media (max-width: 529px) {
-    #homeImage {
-        padding-left: 1rem;
-        height: 277.5px;
-        width: 205px;
-    }
-}
-
-@media (max-width: 401px) {
-    #homeImage {
-        padding-left: 1rem;
-        height: 222px;
-        width: 164px;
-    }
-
-    #h1TextFP {
-        font-size: 1.17em; /* h3 size */
-    }
-
-    #h5TextFP {
-        font-size: 0.60em; /* h6.5 size kinda (theoretically) */
-    }
-}
-
-
-/* ABOUT */
 #about {
     margin-top: 100px;
     margin-bottom: 100px;
@@ -430,7 +431,8 @@ a:hover {
     }
 }
 
-/* Personal Projects */
+/* CSS styling for personal projects section */
+
 #personalProj {
     margin-top: 100px;
 }
@@ -454,8 +456,9 @@ a:hover {
     object-fit: contain;
 }
 
+/* CSS styling for footer */
 
-/* CONTACT ME */
+/* Contact Me */
 #footerBackground {
     background-color: #74B2D0 !important;
     color: white;
