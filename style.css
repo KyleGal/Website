@@ -194,6 +194,17 @@ a:hover {
     }
 }
 
+/* SAFARI ONLY CSS */
+
+@media not all and (min-resolution: 0.001dpcm) {
+    @supports (-webkit-appearance: none) {
+      /* Safari-only CSS rules here */
+      #frontPageTextContainer {
+        padding-right: 2rem !important;
+      }
+    }
+  }
+
 /* CSS styling for navigation bar */
 
 .nav-link {

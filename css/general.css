@@ -162,3 +162,14 @@ a:hover {
         font-size: 0.60em; /* h6.5 size kinda (theoretically) */
     }
 }
+
+/* SAFARI ONLY CSS */
+
+@media not all and (min-resolution: 0.001dpcm) {
+    @supports (-webkit-appearance: none) {
+      /* Safari-only CSS rules here */
+      #frontPageTextContainer {
+        padding-right: 2rem !important;
+      }
+    }
+  }
