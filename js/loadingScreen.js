@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         loadingScreen.addEventListener("transitionend", () => {
             var websiteScreen = document.getElementById("websiteDisplay");
+            loadingScreen.style.display = "none";
 
             websiteScreen.style.transition = "opacity 0.5s";
             websiteScreen.style.opacity = "100";
