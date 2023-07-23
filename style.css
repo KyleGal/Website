@@ -198,10 +198,12 @@ a:hover {
 
 @media not all and (min-resolution: 0.001dpcm) {
     @supports (-webkit-appearance: none) {
-      /* Safari-only CSS rules here */
-      #frontPageTextContainer {
-        padding-right: 2rem !important;
-      }
+        /* Safari-only CSS rules here */
+        @media (max-width: 401px) {
+            #frontPageTextContainer {
+                padding-right: 2rem !important;
+            }
+        }
     }
   }
 
