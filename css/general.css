@@ -1,8 +1,23 @@
 /* CSS file for styling of overall webpage and landing section */
 
+/* Color Palette
+    Background: #FAFAF0
+
+    Blue: #74B2D0
+    Red: #F36870
+    Yellow: #FFF593
+*/
+
+#websiteDisplay {
+    font-family: 'Comfortaa', cursive !important;
+    /* background-color: #FAFAF0 !important; */
+
+    opacity: 0;
+}
+
 body {
-    --bs-body-font-family: 'Comfortaa', cursive;
-    --bs-body-bg: ivory;
+    font-family: 'Comfortaa', cursive !important;
+    background-color: #FAFAF0 !important;
 }
 
 #redBackground {

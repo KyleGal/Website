@@ -29,6 +29,9 @@
         <!-- Style Linking -->
         <link rel="stylesheet" type="text/css" href="style.css" />
 
+        <!-- JavaScript Linking -->
+        <script src="js/loadingScreen.js"></script>
+
         <!-- Bootstrap linking -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
@@ -40,134 +43,143 @@
     </head>
 
     <body>
-        <!-- NAVBAR -->
-        <nav class="navbar navbar-expand-md sticky-top" style="background-color: #74B2D0;">
-            <div class="container-fluid">
-                <!-- Left Side -->
-                <a class="nav-link" href="#">Kyle Gabriel Galvez</a>
-                <!-- Right Side -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <div class="ms-auto">
-                        <ul class="navbar-nav">
-                            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#personalProj">Personal Projects</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#footerBackground">Contact Me</a></li>
-                            <li class="nav-item" id="resume"><a class="nav-link text-center" href="img/Kyle Galvez Resume.pdf">Resume</a></li>
-                        </ul>
+        <!-- Loading Screen -->
+        <div id="loadingScreenDisplay">
+            <div class="progress">
+                <div class="progColor"></div>
+            </div>
+        </div>
+
+        <div id="websiteDisplay">
+            <!-- NAVBAR -->
+            <nav class="navbar navbar-expand-md sticky-top" style="background-color: #74B2D0;">
+                <div class="container-fluid">
+                    <!-- Left Side -->
+                    <a class="nav-link" href="#">Kyle Gabriel Galvez</a>
+                    <!-- Right Side -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="ms-auto">
+                            <ul class="navbar-nav">
+                                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#personalProj">Personal Projects</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#footerBackground">Contact Me</a></li>
+                                <li class="nav-item" id="resume"><a class="nav-link text-center" href="img/Kyle Galvez Resume.pdf">Resume</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+            
+
+            <!-- Filipino Flag Design -->
+            <div><img id="filoCenterStar" src="img/filoStar.png"></div>
+            <div class="triangle"></div>
+            
+            <div class="verticalBanner" id="blueBanner"></div>
+            <div class="verticalBanner" id="redBanner"></div>
+            <div class="horizontalFinish"></div>
 
 
-        <!-- Filipino Flag Design -->
-        <div><img id="filoCenterStar" src="img/filoStar.png"></div>
-        <div class="triangle"></div>
-        
-        <div class="verticalBanner" id="blueBanner"></div>
-        <div class="verticalBanner" id="redBanner"></div>
-        <div class="horizontalFinish"></div>
-
-
-        <!-- LANDING IMAGE AND TEXT -->
-        <section class="container text-center mt-5" id="landingPage">
-            <div class="row flex-row-reverse">
-                <div class="col my-auto p-5 mx-4" id="frontPageTextContainer">
-                    <h1 class="ms-5 me-3 frontPageText" id="h1TextFP">Hi! I'm Kyle</h1>
-                    <h5 class="pt-1 ms-5 me-3 frontPageText" id="h5TextFP">I want to become a software developer</h5>
-                </div>
-                <div class="col">
-                    <img id="homeImage" src="img/homepage.jpg" alt="Image of Kyle">
-                </div>
-                
-            </div>
-        </section>
-
-        <!-- ABOUT -->
-        <section class="container text-center p-5" id="about">
-            <!-- HOUSE TEXT AND IMGS -->
-            <div class="row my-auto p-4" id="redBackground">
-                <!-- TEXT -->
-                <div class="col p-5" id="aboutTextContainer">
-                    <p id="aboutText">My name is Kyle Gabriel Galvez. I have a passion for coding and aspire to become a proficient software developer.</p>
+            <!-- LANDING IMAGE AND TEXT -->
+            <section class="container text-center mt-5" id="landingPage">
+                <div class="row flex-row-reverse">
+                    <div class="col my-auto p-5 mx-4" id="frontPageTextContainer">
+                        <h1 class="ms-5 me-3 frontPageText" id="h1TextFP">Hi! I'm Kyle</h1>
+                        <h5 class="pt-1 ms-5 me-3 frontPageText" id="h5TextFP">I want to become a software developer</h5>
+                    </div>
+                    <div class="col">
+                        <img id="homeImage" src="img/homepage.jpg" alt="Image of Kyle">
+                    </div>
                     
-                    <p id="aboutText">I want to use my skills to bring innovative ideas to life as I find solving complex problems truly captivating. While coding 
-                    is my main passion, I also enjoy various outdoor activities. Volleyball, snowboarding, surfing, and rock climbing are just a 
-                    few of my favorite pastimes. I am always up for an adventure, embracing every opportunity that comes with it!</p>
                 </div>
-                <!-- IMGS -->
-                <div class="col p-3 text-center" id="imageGridContainer">
-                    <div class="imageGrid">
-                        <!-- rock climbing picture -->
-                        <div class="imageGridItem">
-                            <img id="rockClimbing" src="img/about2.jpg" alt="Kyle Rock Climbing">
-                        </div>
-                        <!-- snowboarding picture -->
-                        <div class="imageGridItem">
-                            <img id="snow" src="img/about1.jpg" alt="Kyle Snowboarding">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- PERSONAL PROJECTS -->
-        <section class="container text-center p-5" id="personalProj">
-            <div class="row my-auto p-4 pt-5" id="redBackground">
-                <h2 class="mb-4" id="personalProjTitle">Personal Projects</h1>
-                <div class="row py-2 px-1">
-                    <!-- Kleen Kuts -->
-                    <div class="col-md-4">
-                        <a class="card" href="http://kleenkutsdavis.org/">
-                            <img class="card-img-top p-3" src="img/LogoBlack.png" alt="Kleen Kuts">
-                        </a>
+            <!-- ABOUT -->
+            <section class="container text-center p-5" id="about">
+                <!-- HOUSE TEXT AND IMGS -->
+                <div class="row my-auto p-4" id="redBackground">
+                    <!-- TEXT -->
+                    <div class="col p-5" id="aboutTextContainer">
+                        <p id="aboutText">My name is Kyle Gabriel Galvez. I have a passion for coding and aspire to become a proficient software developer.</p>
+                        
+                        <p id="aboutText">I want to use my skills to bring innovative ideas to life as I find solving complex problems truly captivating. While coding 
+                        is my main passion, I also enjoy various outdoor activities. Volleyball, snowboarding, surfing, and rock climbing are just a 
+                        few of my favorite pastimes. I am always up for an adventure, embracing every opportunity that comes with it!</p>
                     </div>
-                    <!-- Budget Check -->
-                    <!-- <div class="col-md-4">
-                        <a class="card" href="#">
-                            <img class="card-img-top" alt="Budget Check">
-                            <div class="card-body">
-                                <h5 class="card-title">Budget Check</h5>
-                                <p class="card-text">Budgeting/Finance App built with SwiftUI</p>
+                    <!-- IMGS -->
+                    <div class="col p-3 text-center" id="imageGridContainer">
+                        <div class="imageGrid">
+                            <!-- rock climbing picture -->
+                            <div class="imageGridItem">
+                                <img id="rockClimbing" src="img/about2.jpg" alt="Kyle Rock Climbing">
                             </div>
-                        </a>
-                    </div> -->
+                            <!-- snowboarding picture -->
+                            <div class="imageGridItem">
+                                <img id="snow" src="img/about1.jpg" alt="Kyle Snowboarding">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- CONTACT ME -->
-        <footer class="text-center" id="footerBackground">
-            <!-- Email Me -->
-            <section class="text-center my-5 py-5">
-                <section class="mb-4">
-                    <h2 id="emailText">Get in touch!</h2>
-                    <p class="lead" id="emailText">Feel free to message me about anything!!</p>
+            <!-- PERSONAL PROJECTS -->
+            <section class="container text-center p-5" id="personalProj">
+                <div class="row my-auto p-4 pt-5" id="redBackground">
+                    <h2 class="mb-4" id="personalProjTitle">Personal Projects</h1>
+                    <div class="row py-2 px-1">
+                        <!-- Kleen Kuts -->
+                        <div class="col-md-4">
+                            <a class="card" href="http://kleenkutsdavis.org/">
+                                <img class="card-img-top p-3" src="img/LogoBlack.png" alt="Kleen Kuts">
+                            </a>
+                        </div>
+                        <!-- Budget Check -->
+                        <!-- <div class="col-md-4">
+                            <a class="card" href="#">
+                                <img class="card-img-top" alt="Budget Check">
+                                <div class="card-body">
+                                    <h5 class="card-title">Budget Check</h5>
+                                    <p class="card-text">Budgeting/Finance App built with SwiftUI</p>
+                                </div>
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- CONTACT ME -->
+            <footer class="text-center" id="footerBackground">
+                <!-- Email Me -->
+                <section class="text-center my-5 py-5">
+                    <section class="mb-4">
+                        <h2 id="emailText">Get in touch!</h2>
+                        <p class="lead" id="emailText">Feel free to message me about anything!!</p>
+                    </section>
+                    <a href="mailto:kylegmg@gmail.com" id="emailBox" target="_blank" style="text-decoration:none; color: white;">Say Hi</a>
                 </section>
-                <a href="mailto:kylegmg@gmail.com" id="emailBox" target="_blank" style="text-decoration:none; color: white;">Say Hi</a>
-            </section>
 
-            <section class="container">
-                <!-- Social Media -->
-                <div>
-                    <!-- EMAIL -->
-                    <a class="mx-2" href="mailto:kylegmg@gmail.com" role="button"><img id="mailIMG" src="img/icons8-mail-100.png" alt="Email"></a>
-                    <!-- LINKED IN -->
-                    <a class="mx-2" href="https://www.linkedin.com/in/kyle-gabriel-galvez/" role="button"><img id="linkInIMG" src="img/icons8-linkedin---in-logo-used-for-professional-networking,-96 (1).png" alt="LinkedIn"></a>
-                    <!-- GitHub -->
-                    <a class="mx-1" href="https://github.com/KyleGal" role="button"><img id="githubIMG" src="img/icons8-github-96.png" alt="GitHub"></a>
-                    <!-- Instagram -->
-                    <a class="mx-1" href="https://www.instagram.com/kyle.gaalvez/" role="button"><img id="instaIMG" src="img/icons8-instagram-96.png" alt="Instagram"></a>
-                </div>
-                <!-- Copyright -->
-                <div class="text-center pb-4 mt-3">
-                    © Kyle Gabriel Galvez 2023
-                </div>
-            </section>
-        </footer>
+                <section class="container">
+                    <!-- Social Media -->
+                    <div>
+                        <!-- EMAIL -->
+                        <a class="mx-2" href="mailto:kylegmg@gmail.com" role="button"><img id="mailIMG" src="img/icons8-mail-100.png" alt="Email"></a>
+                        <!-- LINKED IN -->
+                        <a class="mx-2" href="https://www.linkedin.com/in/kyle-gabriel-galvez/" role="button"><img id="linkInIMG" src="img/icons8-linkedin---in-logo-used-for-professional-networking,-96 (1).png" alt="LinkedIn"></a>
+                        <!-- GitHub -->
+                        <a class="mx-1" href="https://github.com/KyleGal" role="button"><img id="githubIMG" src="img/icons8-github-96.png" alt="GitHub"></a>
+                        <!-- Instagram -->
+                        <a class="mx-1" href="https://www.instagram.com/kyle.gaalvez/" role="button"><img id="instaIMG" src="img/icons8-instagram-96.png" alt="Instagram"></a>
+                    </div>
+                    <!-- Copyright -->
+                    <div class="text-center pb-4 mt-3">
+                        © Kyle Gabriel Galvez 2023
+                    </div>
+                </section>
+            </footer>
+        </div>
 
     </body>
 </html>

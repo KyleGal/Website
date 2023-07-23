@@ -1,8 +1,53 @@
+/* CSS styling for loading screen */
+
+#loadingScreenDisplay{
+    background-color: #FAFAF0;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+.progress{
+    background-color: transparent !important;
+    height: 25px !important;
+    width: 175px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25%;
+}
+
+.progColor{
+    background:linear-gradient(#F36870 0 0) 0/0% no-repeat #74B2D0;
+    animation: progres 2s 1; 
+
+    width: 175px;
+    height: 25px;
+    border-radius: 20px; 
+}
+
+@keyframes progres{
+    100% {background-size: 100%}
+}
 /* CSS file for styling of overall webpage and landing section */
 
+/* Color Palette
+    Background: #FAFAF0
+
+    Blue: #74B2D0
+    Red: #F36870
+    Yellow: #FFF593
+*/
+
+#websiteDisplay {
+    font-family: 'Comfortaa', cursive !important;
+    /* background-color: #FAFAF0 !important; */
+
+    opacity: 0;
+}
+
 body {
-    --bs-body-font-family: 'Comfortaa', cursive;
-    --bs-body-bg: ivory;
+    font-family: 'Comfortaa', cursive !important;
+    background-color: #FAFAF0 !important;
 }
 
 #redBackground {
@@ -448,6 +493,8 @@ a:hover {
     width: 20rem;
     height: 12rem;
     margin-bottom: 20px;
+
+    background-color: white !important;
 }
 
 .card-img-top {
