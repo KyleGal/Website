@@ -1,34 +1,52 @@
 /* CSS styling for loading screen */
 
-#loadingScreenDisplay{
-    background-color: #FAFAF0;
+body {
+    overflow: hidden;
+}
+
+/* Loading Animation */
+.loadingScreen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: fixed;
-    height: 100%;
+    top: 0;
+    left: 0;
     width: 100%;
-    z-index: -5;
+    height: 100%;
+    background-color: #FAFAF0;
+    z-index: 9999;
 }
 
-.progress{
-    background-color: transparent !important;
-    height: 25px !important;
-    width: 175px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 25%;
+.iconImg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 112px;
+    height: 112px;
+    /* background-image: url('/img/tabIcons/apple-touch-icon-114x114.png');
+    background-size: cover;
+    background-repeat: no-repeat; */
+    object-fit: cover;
+    z-index: 5;
 }
 
-.progColor{
-    background:linear-gradient(#F36870 0 0) 0/0% no-repeat #74B2D0;
-    animation: progres 2s 1; 
+.loader {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #74B2D0;
+    border-radius: 50%;
+    width: 115px;
+    height: 115px;
+    animation: spin 2s linear infinite;
+    z-index: 6;
+  }
 
-    width: 175px;
-    height: 25px;
-    border-radius: 20px; 
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
-@keyframes progres{
-    100% {background-size: 100%}
-}
 /* CSS file for styling of overall webpage and landing section */
 
 /* Color Palette
@@ -43,7 +61,7 @@
     font-family: 'Comfortaa', cursive !important;
     /* background-color: #FAFAF0 !important; */
 
-    opacity: 0;
+    /* opacity: 0; */
 }
 
 body {
@@ -195,7 +213,6 @@ a:hover {
 }
 
 /* SAFARI ONLY CSS */
-
 @media not all and (min-resolution: 0.001dpcm) {
     @supports (-webkit-appearance: none) {
         /* Safari-only CSS rules here */
