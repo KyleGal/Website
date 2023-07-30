@@ -25,9 +25,6 @@ body {
     transform: translate(-50%, -50%);
     width: 112px;
     height: 112px;
-    /* background-image: url('/img/tabIcons/apple-touch-icon-114x114.png');
-    background-size: cover;
-    background-repeat: no-repeat; */
     object-fit: cover;
     z-index: 5;
 }

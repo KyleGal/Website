@@ -10,6 +10,7 @@ const cssBundle = () =>
         'css/navbar.css',
         'css/backgroundBanner.css',
         'css/about.css',
+        'css/personalProjectPopup.css',
         'css/personalProjects.css',
         'css/footer.css',
     ])
