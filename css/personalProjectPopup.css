@@ -3,7 +3,7 @@
 .popup {
     width: 80%;
     background: white;
-    border-radius: 6px;
+    border-radius: 25px;
     position: fixed;
     top: -25%;
     left: 50%;
@@ -21,9 +21,8 @@
     top: 0;
     left: 0;
     z-index: 9998;
-    opacity: 100%;
-    backdrop-filter: blur(5px);
-    /* transition: opacity 0.3s ease; */
+    background: black;
+    opacity: 40%;
 
     visibility: hidden;
 }
@@ -44,8 +43,11 @@
     text-decoration: none;
     background-color: #74B2D0;
     color: white;
+    box-shadow: 5px 4px 4px gray;
 }
 
 .goSite:hover {
     color: white !important;
+    box-shadow: none;
+    transition-duration: 1s;
 }
