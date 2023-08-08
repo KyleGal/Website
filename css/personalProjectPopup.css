@@ -5,14 +5,107 @@
     background: white;
     border-radius: 25px;
     position: fixed;
-    top: -25%;
+    top: 00px;
     left: 50%;
     transform: translate(-50%, 50%);
     text-align: center;
     z-index: 9999;
+    overflow: auto;
 
     visibility: hidden;
 }
+
+
+@media (max-height: 1400px) {
+    .popup {
+        max-height: 1200px;
+        top: 100px;
+    }
+}
+
+@media (max-height: 1200px) {
+    .popup {
+        max-height: 1000px;
+        top: -100px;
+    }
+}
+
+@media (max-height: 1000px) {
+    .popup {
+        max-height: 750px;
+        top: -275px;
+    }
+}
+
+@media (max-height: 900px) {
+    .popup {
+        max-height: 750px;
+        top: -275px;
+    }
+}
+
+@media (max-height: 852px) {
+    .popup {
+        max-height: 750px;
+        top: -300px;
+        overflow: auto;
+    }
+}
+
+@media (max-height: 810px) {
+    .popup {
+        max-height: 725px;
+        top: -185px;
+        overflow: auto;
+    }
+}
+
+@media (max-height: 750px) {
+    .popup {
+        max-height: 650px;
+        top: -275px;
+    }
+}
+
+@media (max-height: 721px) {
+    .popup {
+        max-height: 675px;
+        top: -250px;
+    }
+}
+
+@media (max-height: 700px) {
+    .popup {
+        max-height: 675px;
+        top: -200px;
+    }
+}
+
+@media (max-height: 675px) {
+    .popup {
+        max-height: 600px;
+        top: -225px;
+        overflow: auto;
+    }
+}
+
+@media (max-height: 610px) {
+    .popup {
+        max-height: 575px;
+        top: -200px;
+        overflow: auto;
+    }
+}
+
+@media (max-height: 545px) {
+    .popup {
+        max-height: 450px;
+        top: -175px;
+        overflow: auto;
+    }
+}
+
+
 
 .darkenedBackground {
     position: fixed;
